@@ -117,23 +117,18 @@ input[type=submit] {
 <body>
 <body>
  <h1 style="text-align:center">BookYourShow</h1>
-<div class="container">
-<form action="/insertshow" method="post">
+		<div class="container">
+		<form action="/user/theatre" method="post">
             
-      <center> 
-      <h2 style="text-align:center">Enter Show Details</h2>
+       <center> 
+      <h2 style="text-align:center">View Show details </h2>
       <div class ="cont2"> 
       <div align="center">
      
         
-     
-      <input type="text" placeholder="Movie Name"  name="movieId" required>
-       <input type="number" placeholder="Theater id"  name="theaterId" required>
-        <input type="text" placeholder="Time Slot"  name="timeSlot" required>
-      <input type="number" placeholder="Price per seat"  name="pricePerSeat" required>
-      <input type="number" placeholder="Regular seats"  name="regularSeats" required>
-     
-      <input type="submit" value="Enter">
+      <input type="text" placeholder="Theatre Name"  name="theatreName" required>
+      
+      <input type="submit" value="Submit">
       
       </center>
       </div>
@@ -144,6 +139,8 @@ input[type=submit] {
 
          
 
-  
+  <center><a href="/registerUser"> Register instead !</a></center>
+   <br>
+ <center><a href="loginAdmin">Login as Admin</a></center>
 </body>
 </html>

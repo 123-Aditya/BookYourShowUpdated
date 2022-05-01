@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -96,6 +97,28 @@ input[type=submit] {
   border-radius: 0px 0px 4px 4px;
 }
 
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 50%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+tr:nth-child(even){background-color: white}
+
+th {
+  background-color: #4B0082;
+  color: white;
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
 
 @media screen and (max-width: 650px) {
   .col {
@@ -119,7 +142,26 @@ input[type=submit] {
  <h1 style="text-align:center">BookYourShow</h1>
 		<div class="container">
 		
-			<center>Show Details - User</center>
+			<h2><center>${theatreName}</center></h2>
+			
+			<br>
+			<table class="center">
+			 <tr>
+			    <th>Movie Name</th>
+			    <th>Price per Seat (in rupees)</th>
+			    <th>Regular Seats Available</th>
+			    <th>Time Slot</th>
+			  </tr>
+				<c:forEach items="${shows}" var="show">
+				 <tr>
+				 	<td>${show.movieId}</td>
+				 	<td>${show.pricePerSeat}</td>
+				 	<td>${show.regularSeats}</td>
+				 	<td>${show.timeSlot}</td>
+				 	
+				 </tr>
+				  </c:forEach>
+			</table
 		</div> 
       
 

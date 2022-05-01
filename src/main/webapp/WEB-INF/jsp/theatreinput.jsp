@@ -118,7 +118,7 @@ input[type=submit] {
 <body>
  <h1 style="text-align:center">BookYourShow</h1>
 <div class="container">
-<form action="/insertshow" method="post">
+<form action="/saveTheatre" method="post">
             
       <center> 
       <h2 style="text-align:center">Enter Show Details</h2>
@@ -127,11 +127,12 @@ input[type=submit] {
      
         
      
-      <input type="text" placeholder="Movie Name"  name="movieId" required>
-       <input type="number" placeholder="Theater id"  name="theaterId" required>
-        <input type="text" placeholder="Time Slot"  name="timeSlot" required>
-      <input type="number" placeholder="Price per seat"  name="pricePerSeat" required>
-      <input type="number" placeholder="Regular seats"  name="regularSeats" required>
+      <input type="text" placeholder="Theatre Name"  name="theatrename" required>
+       <input type="text" placeholder="Metro Location"  name="metrolocation" required>
+        <input type="text" placeholder="District"  name="district" required>
+      <input type="number" placeholder="Number of Shows"  name="numberofshows" required>
+      <input type="number" placeholder="Seating Capacity"  name="seatingcapacity" required>
+      <input type="number" placeholder="Reservation Capacity Regular"  name="reservationcapacityregular" required>
      
       <input type="submit" value="Enter">
       

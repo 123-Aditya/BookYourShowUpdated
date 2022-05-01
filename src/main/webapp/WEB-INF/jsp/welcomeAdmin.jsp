@@ -47,7 +47,7 @@ input[type=submit] {
   background-color: #4B0082;
   color: white;
   cursor: pointer;
-  width:50 px;
+  width:50%;
 }
 .col {
   float: left;
@@ -124,11 +124,11 @@ input[type=submit] {
 		<br>
 		What you want to do ?
 		<br> <br>
-		<a href="/admin/theatre"> <input type="submit" value="Change Theatre Details"> </a>
+		<a href="/admin/theatreInput"> <input type="submit" value="Add Theatre Details"> </a>
 		<br> <br>
-		<a href="/admin/movie"> <input type="submit" value="Change Movie Details"></a>
+		<a href="/admin/movie"> <input type="submit" value="Add Movie Details"></a>
 		<br> <br>
-		<a href="/admin/show"> <input type="submit" value="Change Show Details"></a>
+		<a href="/admin/show"> <input type="submit" value="Add Show Details"></a>
 		<br><br>
 		</center>
         </div>

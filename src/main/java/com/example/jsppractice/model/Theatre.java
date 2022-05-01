@@ -7,48 +7,48 @@ import javax.persistence.Id;
 
 @Entity
 public class Theatre {
-
+	
 	@Id
 	@GeneratedValue
-	@Column(name = "theatreId")
-	private Integer theatreId;
-
-	@Column(name = "theatreName")
-	private String theatreName;
-	
-	@Column(name = "metroLocation")
-	private String metroLocation;
-	
+	private Integer theatreid;
+	@Column(name = "theatrename")
+	private String theatrename;
+	@Column(name = "metrolocation")
+	private String metrolocation;
 	@Column(name = "district")
 	private String district;
-	
-	@Column(name = "numberOfShows")
-	private Integer numberOfShows;
-	
-	@Column(name = "seatingCapacity")
-	private Integer seatingCapacity;
-	
-	@Column(name = "reservationCapacityRegular")
-	private Integer reservationCapacityRegular;
+	@Column(name = "numberofshows")
+	private Integer numberofshows;
+	@Column(name = "seatingcapacity")
+	private Integer seatingcapacity;
+	@Column(name = "reservationcapacityregular")
+	private Integer reservationcapacityregular;
 	
 	public Theatre() {
-		
 	}
 
-	public String getTheatreName() {
-		return theatreName;
+	public Integer getTheatreid() {
+		return theatreid;
 	}
 
-	public void setTheatreName(String theatreName) {
-		this.theatreName = theatreName;
+	public void setTheatreid(Integer theatreid) {
+		this.theatreid = theatreid;
 	}
 
-	public String getMetroLocation() {
-		return metroLocation;
+	public String getTheatrename() {
+		return theatrename;
 	}
 
-	public void setMetroLocation(String metroLocation) {
-		this.metroLocation = metroLocation;
+	public void setTheatrename(String theatrename) {
+		this.theatrename = theatrename;
+	}
+
+	public String getMetrolocation() {
+		return metrolocation;
+	}
+
+	public void setMetrolocation(String metrolocation) {
+		this.metrolocation = metrolocation;
 	}
 
 	public String getDistrict() {
@@ -59,31 +59,34 @@ public class Theatre {
 		this.district = district;
 	}
 
-	public Integer getNumberOfShows() {
-		return numberOfShows;
+	public Integer getNumberofshows() {
+		return numberofshows;
 	}
 
-	public void setNumberOfShows(Integer numberOfShows) {
-		this.numberOfShows = numberOfShows;
+	public void setNumberofshows(Integer numberofshows) {
+		this.numberofshows = numberofshows;
 	}
 
-	public Integer getSeatingCapacity() {
-		return seatingCapacity;
+	public Integer getSeatingcapacity() {
+		return seatingcapacity;
 	}
 
-	public void setSeatingCapacity(Integer seatingCapacity) {
-		this.seatingCapacity = seatingCapacity;
+	public void setSeatingcapacity(Integer seatingcapacity) {
+		this.seatingcapacity = seatingcapacity;
 	}
 
-	public Integer getReservationCapacityRegular() {
-		return reservationCapacityRegular;
+	public Integer getReservationcapacityregular() {
+		return reservationcapacityregular;
 	}
 
-	public void setReservationCapacityRegular(Integer reservationCapacityRegular) {
-		this.reservationCapacityRegular = reservationCapacityRegular;
+	public void setReservationcapacityregular(Integer reservationcapacityregular) {
+		this.reservationcapacityregular = reservationcapacityregular;
 	}
-
+	
+	
+	
+	
 	
 
-	
+
 }

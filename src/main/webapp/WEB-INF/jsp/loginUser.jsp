@@ -117,6 +117,7 @@ input[type=submit] {
 <body>
 <body>
  <h1 style="text-align:center">BookYourShow</h1>
+ <h2 style="color: red;"><center>${errorMsg}</center></h2>
 		<div class="container">
 		<form action="/loginUser" method="post">
             
@@ -126,7 +127,7 @@ input[type=submit] {
       <div align="center">
      
         
-      <input type="text" placeholder="Email"  name="inputId" required>
+      <input type="text" placeholder="Username"  name="inputId" required>
       <input type="password"  placeholder="Password"  name="password" required>
       <input type="submit" value="Login">
       

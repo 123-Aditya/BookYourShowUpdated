@@ -96,6 +96,28 @@ input[type=submit] {
   border-radius: 0px 0px 4px 4px;
 }
 
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+  width: 50%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid black;
+}
+
+tr:nth-child(even){background-color: white}
+
+th {
+  background-color: #4B0082;
+  color: white;
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
 
 @media screen and (max-width: 650px) {
   .col {

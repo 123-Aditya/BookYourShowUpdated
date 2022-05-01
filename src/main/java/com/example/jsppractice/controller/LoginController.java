@@ -41,7 +41,9 @@ public class LoginController {
 			model.put("inputId", inputId);
 			return "welcomeAdmin";
 		}
-		model.put("errorMsg", "Please provide correct Username ans Password ! ");
+		else {
+		model.put("errorMsg", "Please provide correct Username and Password ! ");
+		}
 		return "loginAdmin";
 	}
 	
@@ -54,7 +56,9 @@ public class LoginController {
 			return "welcomeUser";
 			
 		}
-		model.put("errorMsg", "Please provide correct Username ans Password ! ");
+		else {
+		model.put("errorMsg", "Please provide correct Username and Password ! ");
+		}
 		return "loginUser";
 	}
 	
